@@ -1,0 +1,21 @@
+.contact-us {
+  background-color: white;
+  padding: 40px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+    }
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}

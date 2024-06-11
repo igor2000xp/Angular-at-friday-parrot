@@ -1,0 +1,32 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .hero-content {
+    max-width: 50%;
+
+    h1 {
+      font-size: 44px;
+      color: #2f281e;
+    }
+
+    p {
+      font-size: 18px;
+      color: #544837;
+    }
+
+    button {
+      margin-right: 20px;
+    }
+  }
+
+  .hero-image {
+    max-width: 50%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

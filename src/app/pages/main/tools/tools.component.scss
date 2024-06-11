@@ -1,0 +1,11 @@
+.tools {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+
+  .tools-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}

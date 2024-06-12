@@ -1,0 +1,10 @@
+<div class="marketing-card">
+  <img [src]="marketing.imageUrl" alt="{{ marketing.title }}" />
+  <div class="card-content">
+    <h3>{{ marketing.title }}</h3>
+    <p>{{ marketing.description }}</p>
+    <div class="tags">
+      <span *ngFor="let tag of marketing.tags">{{ tag }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<section class="contact-us">
+  <div class="contact-content">
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.description }}</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src="./assets/ico-phone.svg" alt="Phone Icon" />
+        <span>{{ data.phone }}</span>
+      </div>
+      <div class="contact-item">
+        <img src="./assets/ico-mail.svg" alt="Email Icon" />
+        <span>{{ data.email }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <input type="text" placeholder="Your name" />
+    <input type="email" placeholder="Your email" />
+    <textarea placeholder="What do you want to ask?"></textarea>
+    <button mat-raised-button color="accent">Send</button>
+  </div>
+</section>

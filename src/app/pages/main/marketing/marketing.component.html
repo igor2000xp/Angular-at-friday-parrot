@@ -1,7 +1,21 @@
-<section class="marketing-strategies">
-  <h2>Marketing Strategies</h2>
-  <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
-  <div class="strategy-cards">
-    <app-marketing-card *ngFor="let marketing of data" [marketing]="marketing"></app-marketing-card>
+<section class="marketing">
+  <div class="marketing-header">
+    <h2>Marketing Strategies</h2>
+    <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
+    <div class="tags">
+      <button class="tag active">All</button>
+      <button class="tag">Art</button>
+      <button class="tag">Culture</button>
+      <button class="tag">Design</button>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card" *ngFor="let card of data">
+      <img [src]="card.image" alt="Card Image">
+      <div class="card-tags">
+        <span class="tag" *ngFor="let tag of card.tags">{{ tag }}</span>
+      </div>
+      <h3>{{ card.title }}</h3>
+    </div>
   </div>
 </section>
